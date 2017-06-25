@@ -2,8 +2,7 @@
 
 $(function () {
     console.log("https://jsonplaceholder.typicode.com/users");
-
-    $(window).scroll(function () {
+$('#get-data').click(function () {
         if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
             /*        if ($(window).scrollTop() + $(window).height() > $(document).height() - 100) {*/
             $.getJSON('https://jsonplaceholder.typicode.com/users', function (data) {
