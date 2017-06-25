@@ -24,6 +24,19 @@ function pobierzDane() {
                 document.body.appendChild(userName);
                     
                 console.log(userName);
+                
+               var userId = document.createElement('p');
+                userId.innerHTML = 'ID uzytkownika to: ' + returnData.userID;
+                
+                document.body.appendChild(userId);
+                    
+                console.log(userId);
+               var userURL = document.createElement('p');
+                userURL.innerHTML = 'Adres URL to: ' + returnData.userURL;
+                
+                document.body.appendChild(userURL);
+                    
+                console.log(userURL);
 
                 httpReq = null;
             }
