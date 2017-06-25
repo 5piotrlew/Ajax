@@ -20,22 +20,22 @@ function pobierzDane() {
 
                 var userName = document.createElement('p');
                 userName.innerHTML = 'Nazwa uzytkownika to: ' + returnData.userName;
-                
+
                 document.body.appendChild(userName);
-                    
+
                 console.log(userName);
-                
-               var userId = document.createElement('p');
+
+                var userId = document.createElement('p');
                 userId.innerHTML = 'ID uzytkownika to: ' + returnData.userID;
-                
+
                 document.body.appendChild(userId);
-                    
+
                 console.log(userId);
-               var userURL = document.createElement('p');
-                userURL.innerHTML = 'Adres URL to: ' + returnData.userURL;
-                
+                var userURL = document.createElement('p');
+                userURL.innerHTML = 'Adres URL to: ' + '<a href=' + 'http://' + returnData.userURL + '>akademia108.pl</a>';
+
                 document.body.appendChild(userURL);
-                    
+
                 console.log(userURL);
 
                 httpReq = null;
