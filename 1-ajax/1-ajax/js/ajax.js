@@ -31,4 +31,3 @@ function pobierzDane() {
     }
     httpReq.send();
 }
-pobierzDane();
