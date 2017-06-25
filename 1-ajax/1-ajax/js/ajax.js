@@ -12,12 +12,19 @@ function pobierzDane() {
             console.log(httpReq.status);
 
             if (httpReq.status >= 200 && httpReq.status < 300 || httpReq.status == 304 || navigator.userAgent.indexOf("Safari") >= 0 && typeof httpReq.status == "undefined") {
-                
+
                 console.log(typeof httpReq.responseText);
                 var returnData = JSON.parse(httpReq.responseText);
-                
+
                 console.log(returnData);
+
+                var userName = document.createElement('p');
+                userName.innerHTML = 'Nazwa uzytkownika to: ' + returnData.userName;
                 
+                document.body.appendChild(userName);
+                    
+                console.log(userName);
+
                 httpReq = null;
             }
         }
